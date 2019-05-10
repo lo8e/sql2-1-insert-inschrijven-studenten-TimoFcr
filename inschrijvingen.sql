@@ -9,4 +9,12 @@ VALUES ("90000","Barikzai",NULL,"Samir","15-10-2001","1111 AB","Leiden","105.2",
 	   ("90001","Ruiter","de","Kristian","25-11-2001","1112 BC","Leiden","104.8","2.10","26-11-2001"),
        ("90002","Marrawi",NULL,"Hasan","15-05-1999","1113 CD","Leiden","103.5","0.56","16-05-1999"),
        ("90003","Schouten",NULL,"Timo","19-03-2002","2224 GJ","Katwijk","72.4","1.87","20-03-2002");
+       
+INSERT INTO klassen_studenten (ov_nummer, klas_code)
+VALUES ("90000","lo9e-amo1"),
+	   ("90001","lo9e-amo1"),
+       ("90002","lo9e-amo2"),
+       ("90003","lo9e-amo3");
+       
+	
 
