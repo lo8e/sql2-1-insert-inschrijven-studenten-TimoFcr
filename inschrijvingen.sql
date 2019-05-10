@@ -23,6 +23,14 @@ WHERE ov_nummer = "90000";
 UPDATE studenten
 SET actief = "0"
 WHERE inschrijvings_datum < 2017-1-1;
+
+SELECT studenten.ov_nummer, CONCAT(studenten.voornaam, studenten.tussenvoegsel, studenten.achternaam) AS volledige_naam, klassen.klas_code, klassen.cohort, CONCAT(docenten.voorletters, docenten.tussenvoegsel, docenten.achternaam) AS docent_naam
+FROM studenten
+LEFT JOIN klassen_studenten ON studenten.ov_nummer = klassen_studenten.ov_nummer
+LEFT JOIN klassen ON klassen_studenten.klas_code = klassen.klas_code
+LEFT JOIN docenten ON klassen.slb_code = docenten.docent_code
+ORDER BY klassen.klas_code ASC
+ 
 	
 	
 
